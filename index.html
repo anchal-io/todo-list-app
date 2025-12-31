@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+              initial-scale=1.0">
+
+    <title>TO-DO LIST</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+   <div class="todo-wrapper">
+    <div class="header">
+    <div class="heading">
+    <h1>
+    <span>T</span>o 
+     <span>D</span>o 
+    <span>L</span>ist</h1>
+    </div>
+
+    <div class="image">
+        <img src="diary.png" class="diary">
+    </div>
+
+     </div>
+     <form id="todoForm">
+    <div class="todo-input-grid">
+   <input type="text" placeholder="Add a new task..." 
+               class="js-text-input">
+    <input type="date" 
+         class="js-dueDate-input">
+
+    <button type="submit" class="add-btn">➕</button>
+    </div>
+    </form>
+  </div>
+
+    <div class="js-todo-list"></div> <!--div is a block element-->
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

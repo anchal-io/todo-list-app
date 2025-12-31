@@ -1,0 +1,161 @@
+ body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    line-height: 1.6; 
+    font-size: clamp(14px, 2vw, 16px);
+    background: linear-gradient(135deg, #232526, #414345);
+ }
+
+@media (max-width: 600px){
+    .todo-input-grid  {
+        grid-template-columns: 1fr;
+       row-gap: 5px;
+       }
+
+       .js-text-input::placeholder {
+         font-size: 0.7rem;
+       }
+
+    .todo-item-grid{
+         grid-template-columns: 30px 1fr auto auto;
+    }
+
+    .add-btn, .js-dueDate-input, .delete-btn {
+        width: 100%;
+        min-height: 45px;
+    }
+
+    .diary {
+        max-width: 70px;
+        height: auto;
+    }
+ }
+
+  .todo-wrapper {
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+ }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+ }
+
+ .heading{
+    color:#ffffff;
+    font-size: 1.5rem;
+}
+
+ .heading span {
+    color: #ff5252;
+}
+
+ .diary{
+    max-width: 70px;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+ .empty-msg {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+}
+
+ .todo-item-grid,
+          .todo-input-grid{
+            display: grid;
+            column-gap: 10px;
+            row-gap: 10px;
+            max-width: 550px;
+            width: 100%;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+           margin: auto;
+           
+}
+
+ .todo-input-grid {
+            margin-bottom: 10px;
+           align-items: stretch;
+           min-height: 40px;
+           box-sizing: border-box;
+           grid-template-columns: 1fr 139px auto;
+}
+
+ .todo-input-grid input {
+    font-size: 1rem;
+}
+
+ .todo-input-grid > *, .todo-item-grid > * {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+ .todo-item-grid {
+    color: #ffffff;
+    background: #2d2d2d;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+   border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    grid-template-columns: 30px 1fr 130px auto;
+     
+}
+
+ .todo-item-grid:hover{
+    background-color: #333;
+    transition: background-color 0.2s ease;
+    box-shadow: 0.2s ease;
+}
+
+
+ .completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+
+ .add-btn, .delete-btn {
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+ .add-btn {
+    font-size: 1.1rem;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    background: #505050;
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 4px;
+}
+
+.add-btn:hover {
+   background: #6a6a6a;
+}
+
+ .delete-btn {
+   background: #2d2d2d;
+   margin-left: 5px;
+   font-size: 9px;
+}
+
+.delete-btn:hover{
+   background: #444;
+}
